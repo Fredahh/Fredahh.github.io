@@ -13,7 +13,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2024/07/18/hello-world/"/>
+    <link rel="canonical" href="http://example.com/2025/08/07/xss/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -23,14 +23,14 @@
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2024/07/18/hello-world/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2025/08/07/XSS/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
-<meta property="article:published_time" content="2024-07-18T08:24:54.168Z">
-<meta property="article:modified_time" content="2024-07-18T08:24:54.168Z">
+<meta property="article:published_time" content="2025-08-07T08:53:27.626Z">
+<meta property="article:modified_time" content="2025-03-19T15:00:25.984Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/redefine-og.webp">
@@ -45,7 +45,7 @@
     
     <title>
         
-            Hello World | Freda Blog
+            Freda Blog - hhh
         
     </title>
 
@@ -426,7 +426,7 @@
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Hello World</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3"></h1>
 			</div>
 			
 		</div>
@@ -447,15 +447,15 @@
 					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-07-18 16:24:54</span>
-        <span class="mobile">2024-07-18 16:24:54</span>
+        <span class="desktop">2025-08-07 16:53:27</span>
+        <span class="mobile">2025-08-07 16:53:27</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-07-18 16:24:54</span>
-            <span class="mobile">2024-07-18 16:24:54</span>
+            <span class="desktop">2025-03-19 23:25</span>
+            <span class="mobile">2025-03-19 23:25</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -482,38 +482,73 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<p>Welcome to <a class="link" target="_blank" rel="noopener" href="https://hexo.io/">Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link" target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+			<h1 id="XSS"><a href="#XSS" class="headerlink" title="XSS"></a>XSS</h1><h2 id="level1"><a href="#level1" class="headerlink" title="level1"></a>level1</h2><p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250226202354725.png" alt="image-20250226202354725"></p>
+<p>GET传参</p>
+<p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250226202421211.png" alt="image-20250226202421211"></p>
+<p>提示payload长度为4</p>
+<p>name&#x3D;test,其中test的长度正好为4，那么可以从name入手，构造</p>
+<script>alert()</script>
 
-<p>More info: <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+<p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250226203041688.png" alt="image-20250226203041688"></p>
+<p>通关！</p>
+<h2 id="level2"><a href="#level2" class="headerlink" title="level2"></a>level2</h2><p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250226203122085.png" alt="image-20250226203122085"></p>
+<p>看起来像是post传参，payload还是在keyword，先构造一下试试</p>
+<p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250226203933666.png" alt="image-20250226203933666"></p>
+<p>不对，康康源代码</p>
+<p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250226203954227.png" alt="image-20250226203954227"></p>
+<p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250226204017181.png" alt="image-20250226204017181"></p>
+<p>发现把&lt;&gt;屏蔽了</p>
+<p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250227115123059.png" alt="image-20250227115123059"></p>
+<p>由于在引号闭合所以&lt;&gt;会被变为&amp;it和&amp;gt</p>
+<p>通过构造<code>&quot;&gt;&lt;script&gt;alert()&lt;/script&gt;&lt;&quot;</code>绕过闭合</p>
+<p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250227115109746.png" alt="image-20250227115109746"></p>
+<h2 id="level3"><a href="#level3" class="headerlink" title="level3"></a>level3</h2><p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250227115640742.png" alt="image-20250227115640742"></p>
+<p>源代码：</p>
+<p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250227115608645.png" alt="image-20250227115608645"></p>
+<script>alert()</script>,不对<>被绕过了
 
-<p>More info: <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-
+<p>使用没有&lt;&gt;的方法</p>
+<h4 id="步骤1：闭合"><a href="#步骤1：闭合" class="headerlink" title="步骤1：闭合"></a>步骤1：闭合</h4><p>先输入<code>&#39;</code>闭合value</p>
+<h4 id="步骤2：注入"><a href="#步骤2：注入" class="headerlink" title="步骤2：注入"></a>步骤2：注入</h4><h5 id="方法一：onmouseover"><a href="#方法一：onmouseover" class="headerlink" title="方法一：onmouseover"></a>方法一：onmouseover</h5><p><code>onmouseover=&#39;alert(&#39;XSS&#39;)&#39;</code></p>
+<h2 id="level-4"><a href="#level-4" class="headerlink" title="level 4"></a>level 4</h2><p>注入<code>&quot;&lt;script&gt;alert()&lt;/script&gt;</code></p>
+<p>发现&lt;&gt;被过滤了</p>
+<p>用<code>&quot;onmouseover=&quot;alert(&#39;XSS&#39;)&quot;</code></p>
+<h2 id="level-5"><a href="#level-5" class="headerlink" title="level 5"></a>level 5</h2><p>注入<code>&quot;&lt;script&gt;alert()&lt;/script&gt;</code></p>
+<p>发现&lt;&gt;被过滤了,并且</p>
+<p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250301134343176.png" alt="image-20250301134343176"></p>
+<p>用<code>&quot;onmouseover=&quot;alert(&#39;XSS&#39;)&quot;</code></p>
+<p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250301134406450.png" alt="image-20250301134406450"></p>
+<p>不能用JavaScript事件</p>
+<p>先“&gt;闭合input再插入<code>&lt;a href=&quot;javascript:alert(&#39;xss&#39;)&quot;&gt;click me&lt;/a&gt;</code></p>
+<p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250301145807775.png" alt="image-20250301145807775"></p>
+<p>点击click me就通关了</p>
+<h2 id="level-6"><a href="#level-6" class="headerlink" title="level 6"></a>level 6</h2><p>按level5方法尝试，发现re也被绕过了</p>
+<p>看源代码，发现没有屏蔽大小写绕过，用大小写绕过</p>
+<p><code>&quot;&gt;&lt;Script&gt;alert()&lt;/Script&gt;</code></p>
+<h2 id="level-7"><a href="#level-7" class="headerlink" title="level 7"></a>level 7</h2><p><img lazyload src="/images/loading.svg" data-src="C:\Users\20787\AppData\Roaming\Typora\typora-user-images\image-20250319150359058.png" alt="image-20250319150359058"></p>
+<p>屏蔽了大小写，没屏蔽&lt;&gt;</p>
+<p>可以试试双写绕过</p>
+<p><code>&quot;&gt;&lt;scrscriptipt&gt;alert()&lt;/scrscriptipt&gt;</code></p>
+<p>通过了</p>
+<h2 id="level-8"><a href="#level-8" class="headerlink" title="level 8"></a>level 8</h2>
 		</div>
 
 		
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> Hello World</li>
+        <li><strong>Title:</strong> </li>
         <li><strong>Author:</strong> Freda</li>
         <li><strong>Created at
-                :</strong> 2024-07-18 16:24:54</li>
+                :</strong> 2025-08-07 16:53:27</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-07-18 16:24:54
+                    :</strong> 2025-03-19 23:00:25
             </li>
         
         <li>
-            <strong>Link:</strong> https://redefine.ohevan.com/2024/07/18/hello-world/
+            <strong>Link:</strong> https://redefine.ohevan.com/2025/08/07/XSS/
         </li>
         <li>
             <strong>
@@ -538,18 +573,18 @@
 		
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
-			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/2024/12/04/my-blog/">
-					<span class="left arrow-icon flex justify-center items-center">
-						<i class="fa-solid fa-chevron-left"></i>
-					</span>
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2024/12/04/SSHCTF/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item">my_blog</span>
-						<span class="post-nav-item">Prev posts</span>
+						<span class="post-nav-title-item">SSHCTF</span>
+						<span class="post-nav-item">Next posts</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
 					</span>
 				</a>
 			</div>
-			
 			
 		</div>
 		
@@ -606,8 +641,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
-		<div class="page-title">Hello World</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+		<div class="page-title"></div>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#XSS"><span class="nav-text">XSS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#level1"><span class="nav-text">level1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#level2"><span class="nav-text">level2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#level3"><span class="nav-text">level3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#level-4"><span class="nav-text">level 4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#level-5"><span class="nav-text">level 5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#level-6"><span class="nav-text">level 6</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#level-7"><span class="nav-text">level 7</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#level-8"><span class="nav-text">level 8</span></a></li></ol></li></ol>
 
 	</div>
 </div>
